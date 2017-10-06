@@ -1,5 +1,5 @@
 {
-  "name": "react-bootstrap-date-picker",
+  "name": "jonshort-shim-react-bootstrap-date-picker",
   "keywords": [
     "react",
     "react-component",
@@ -11,14 +11,23 @@
     "picker"
   ],
   "main": "lib/index.js",
-  "version": "5.0.1",
+  "version": "0.0.1",
   "description": "React-Bootstrap based date picker.",
   "directories": {
     "test": "test"
   },
-  "peerDependencies": {
-    "react": ">=0.14.0",
-    "react-bootstrap": "^0.31.0"
+  "scripts": {
+    "example": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base example/ --config ./example/webpack.example.config.js",
+    "gh-pages": "./node_modules/webpack/bin/webpack.js --config ./example/webpack.example.config.js; cp ./example/index.html /tmp/index.html; cp ./example/bundle.js /tmp/bundle.js; git checkout gh-pages; cp /tmp/index.html ./index.html; cp /tmp/bundle.js ./bundle.js; chmod -x .git/hooks/pre-commit .git/hooks/post-commit; git commit -a -m 'Automatic Example Update'; git push origin gh-pages; chmod +x .git/hooks/pre-commit .git/hooks/post-commit; git checkout master;",
+    "test": "./node_modules/karma/bin/karma start test/karma.conf.js",
+    "build": "doctoc . --github --title '<h1>Table of Contents</h1>'; ./node_modules/babel-cli/bin/babel.js ./src --plugins add-module-exports --out-dir ./lib;",
+    "lint": "./node_modules/.bin/eslint --fix ./src/**"
+  },
+  "dependencies": {
+    "create-react-class": "^15.5.2",
+    "prop-types": "^15.5.9",
+    "react": "^15.6.1",
+    "react-bootstrap": "^0.31.1"
   },
   "devDependencies": {
     "assert": "^1.4.1",
@@ -31,7 +40,6 @@
     "babel-preset-react": "^6.23.0",
     "babel-preset-stage-1": "^6.22.0",
     "co": "^4.6.0",
-    "create-react-class": "^15.5.2",
     "doctoc": "^1.3.0",
     "envify": "^4.0.0",
     "es6-promise": "^4.1.0",
@@ -53,22 +61,12 @@
     "mocha": "^3.2.0",
     "mocha-babel": "^3.0.3",
     "node-uuid": "^1.4.7",
-    "prop-types": "^15.5.8",
-    "react": "^15.5.4",
-    "react-bootstrap": "^0.31.0",
     "react-dom": "^15.5.4",
     "regenerator": "^0.8.46",
     "regenerator-loader": "^3.1.0",
     "transform-loader": "^0.2.4",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.4.2"
-  },
-  "scripts": {
-    "example": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base example/ --config ./example/webpack.example.config.js",
-    "gh-pages": "./node_modules/webpack/bin/webpack.js --config ./example/webpack.example.config.js; cp ./example/index.html /tmp/index.html; cp ./example/bundle.js /tmp/bundle.js; git checkout gh-pages; cp /tmp/index.html ./index.html; cp /tmp/bundle.js ./bundle.js; chmod -x .git/hooks/pre-commit .git/hooks/post-commit; git commit -a -m 'Automatic Example Update'; git push origin gh-pages; chmod +x .git/hooks/pre-commit .git/hooks/post-commit; git checkout master;",
-    "test": "./node_modules/karma/bin/karma start test/karma.conf.js",
-    "build": "doctoc . --github --title '<h1>Table of Contents</h1>'; ./node_modules/babel-cli/bin/babel.js ./src --plugins add-module-exports --out-dir ./lib;",
-    "lint": "./node_modules/.bin/eslint --fix ./src/**"
   },
   "repository": {
     "type": "git",
@@ -78,6 +76,9 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/pushtell/react-bootstrap-date-picker/issues"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "homepage": "https://github.com/pushtell/react-bootstrap-date-picker#readme"
 }

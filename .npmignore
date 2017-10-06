@@ -1,0 +1,20 @@
+# Directories
+src/
+test/
+documentation-images/
+.vscode/
+.github/
+example/
+coverage/
+
+# Files
+yarn-error.log
+.babelrc
+.eslintrc
+.gitignore
+.npmrc
+.usernpmrc
+circle.yml
+travis.yml
+yarn.lock
+npm-debug.log*
