@@ -5,6 +5,7 @@ documentation-images/
 .vscode/
 .github/
 example/
+coverage/
 
 # Files
 yarn-error.log

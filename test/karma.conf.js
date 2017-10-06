@@ -128,7 +128,7 @@ module.exports = function (karma) {
       return key.indexOf("bs_") !== -1;
     });
   } else {
-    options.browsers = ['Chrome', 'Firefox', 'Safari'];
+    options.browsers = ['Firefox'];
   }
   if(process.env.COVERALLS_REPO_TOKEN) {
     options.reporters.push('coveralls');
