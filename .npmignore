@@ -15,6 +15,6 @@ yarn-error.log
 .npmrc
 .usernpmrc
 circle.yml
-travis.yml
+.travis.yml
 yarn.lock
 npm-debug.log*
