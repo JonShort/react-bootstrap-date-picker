@@ -1,18 +1,8 @@
 # React-Bootstrap based date picker.
 
-[![NPM Version](https://badge.fury.io/js/react-bootstrap-date-picker.svg)](https://www.npmjs.com/package/react-bootstrap-date-picker)
-[![Circle CI](https://circleci.com/gh/pushtell/react-bootstrap-date-picker.svg?style=shield)](https://circleci.com/gh/pushtell/react-bootstrap-date-picker)
-[![Coverage Status](https://coveralls.io/repos/pushtell/react-bootstrap-date-picker/badge.svg?branch=master&service=github)](https://coveralls.io/github/pushtell/react-bootstrap-date-picker?branch=master)
-[![Dependency Status](https://david-dm.org/pushtell/react-bootstrap-date-picker.svg)](https://david-dm.org/pushtell/react-bootstrap-date-picker)
-[![NPM Downloads](https://img.shields.io/npm/dm/react-bootstrap-date-picker.svg?style=flat)](https://www.npmjs.com/package/react-bootstrap-date-picker)
-
-See the demo at [pushtell.github.io/react-bootstrap-date-picker](http://pushtell.github.io/react-bootstrap-date-picker/).
-
-[![Demo](https://cdn.rawgit.com/pushtell/react-bootstrap-date-picker/master/documentation-images/date-picker-screencast.gif)](http://pushtell.github.io/react-bootstrap-date-picker/)
-
-Please [★ on GitHub](https://github.com/pushtell/react-bootstrap-date-picker)!
-
-Using this module in production? [We'd love to hear about it.](https://github.com/pushtell/react-bootstrap-date-picker/issues/17)
+[![NPM Version](https://badge.fury.io/js/jonshort-shim-react-bootstrap-date-picker.svg)](https://www.npmjs.com/package/jonshort-shim-react-bootstrap-date-picker)
+[![Travis CI](https://travis-ci.org/JonShort/react-bootstrap-date-picker.svg?branch=master)](https://travis-ci.org/JonShort/react-bootstrap-date-picker)
+[![NPM Downloads](https://img.shields.io/npm/dm/jonshort-shim-react-bootstrap-date-picker.svg?style=flat)](https://www.npmjs.com/package/jonshort-shim-react-bootstrap-date-picker)
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -33,13 +23,13 @@ Using this module in production? [We'd love to hear about it.](https://github.co
 `react-bootstrap-date-picker` is compatible with React 0.14.x and 0.15.x.
 
 ```bash
-npm install react-bootstrap-date-picker
+npm install jonshort-shim-react-bootstrap-date-picker
 ```
 
 ## Usage
 
 ```js
-var DatePicker = require("react-bootstrap-date-picker");
+var DatePicker = require("jonshort-shim-react-bootstrap-date-picker");
 
 var App = React.createClass({
   getInitialState: function(){
