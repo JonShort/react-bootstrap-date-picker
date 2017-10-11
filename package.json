@@ -74,15 +74,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pushtell/react-bootstrap-date-picker.git"
+    "url": "git+https://github.com/JonShort/react-bootstrap-date-picker.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pushtell/react-bootstrap-date-picker/issues"
+    "url": "https://github.com/JonShort/react-bootstrap-date-picker/issues"
   },
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "https://github.com/pushtell/react-bootstrap-date-picker#readme"
+  "homepage": "https://github.com/JonShort/react-bootstrap-date-picker#readme"
 }
