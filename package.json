@@ -28,7 +28,8 @@
     "react-bootstrap": ">=0.31.0"
   },
   "dependencies": {
-    "create-react-class": "^15.5.2"
+    "create-react-class": "^15.5.2",
+    "prop-types": "^15.5.9"
   },
   "devDependencies": {
     "assert": "^1.4.1",
@@ -62,7 +63,6 @@
     "mocha": "^3.2.0",
     "mocha-babel": "^3.0.3",
     "node-uuid": "^1.4.7",
-    "prop-types": "^15.5.9",
     "react": "^15.6.1",
     "react-bootstrap": "^0.31.1",
     "react-dom": "^15.5.4",
