@@ -11,5 +11,7 @@ deploy:
   email: $NPM_EMAIL
   api_key: $NPM_TOKEN
   on:
+    branch: master
     tags: true
+    repo: jonshort/react-bootstrap-date-picker
   skip_cleanup: true
